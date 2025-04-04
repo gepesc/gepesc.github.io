@@ -9,11 +9,19 @@
     <style>
       body {
         margin: 0;
-        display: flex;
         font-family: monospace;
         background: #0f0f0f;
         color: #33ff33;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
+
+      .layout {
+        display: flex;
+        flex: 1;
+      }
+
       .sidebar {
         width: 220px;
         background-color: #111;
@@ -21,6 +29,7 @@
         height: 100vh;
         position: fixed;
       }
+
       .sidebar a {
         display: block;
         color: #33ff33;
@@ -30,18 +39,18 @@
       .sidebar a:hover {
         text-decoration: underline;
       }
+
       .content {
         margin-left: 240px;
         padding: 20px;
         width: calc(100% - 240px);
       }
+
       footer {
         text-align: center;
         padding: 20px;
         background-color: #111;
         color: #33ff33;
-        position: relative;
-        margin-top: 40px;
       }
 
       .social-icons {
@@ -61,6 +70,7 @@
       .social-icons img:hover {
         transform: scale(1.1);
       }
+
     </style>
   </head>
   <body>
@@ -81,7 +91,7 @@
           <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
         </a>
         <a href="https://wp.ufpel.edu.br/gepesc/" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Website">
+          <img src="https://cdn-icons-png.flaticon.com/512/535/535245.png" alt="Website">
         </a>
         <a href="mailto:gepesc@inf.ufpel.edu.br" target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
