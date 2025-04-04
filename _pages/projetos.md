@@ -4,12 +4,12 @@ title: Projetos
 permalink: /projetos/
 ---
 
-<h1>Projetos Públicos</h1>
+<h1>Projetos Desenvolvidos</h1>
 <div id="projetos"></div>
 
 <script>
   const username = "gepesc";
-  const reposExcluidos = ["https://github.com/gepesc/gepesc.github.io"]; // Repositório da página
+  const reposExcluidos = ["gepesc.github.io"]; // Repositório da página
 
   async function fetchRepos() {
     const response = await fetch(`https://api.github.com/users/${username}/repos`);
