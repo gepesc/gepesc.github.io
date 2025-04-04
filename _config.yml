@@ -4,7 +4,7 @@ plugins:
 
 # Site Settings
 locale                   : "pt-BR"
-title                    : "GESPESC"
+title                    : "GEPESC"
 title_separator          : "-"
 name                     : &name "GEPESC"
 
