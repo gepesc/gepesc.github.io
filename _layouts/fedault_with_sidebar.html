@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        font-family: monospace;
+        background: #0f0f0f;
+        color: #33ff33;
+      }
+      .sidebar {
+        width: 220px;
+        background-color: #111;
+        padding: 20px;
+        height: 100vh;
+        position: fixed;
+      }
+      .sidebar a {
+        display: block;
+        color: #33ff33;
+        text-decoration: none;
+        margin-bottom: 10px;
+      }
+      .sidebar a:hover {
+        text-decoration: underline;
+      }
+      .content {
+        margin-left: 240px;
+        padding: 20px;
+        width: calc(100% - 240px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h3>{{ site.title }}</h3>
+      <a href="{{ '/' | relative_url }}">Início</a>
+      <a href="{{ '/_pages/tipos_ataques.html' | relative_url }}">Tipos de Ataques</a>
+      <a href="{{ '/_pages/alguma_outra_pagina.html' | relative_url }}">Outra Página</a>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>

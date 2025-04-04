@@ -1,5 +1,5 @@
 ---
-layout: custom
+layout: default_with_sidebar
 title: "Tipos de Ataques"
 permalink: /ataques/
 author_profile: true
