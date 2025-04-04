@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 title: "Tipos de Ataques"
 permalink: /ataques/
 author_profile: true
